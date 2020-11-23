@@ -1,0 +1,10 @@
+.btn{
+    margin-top: 10px;
+}
+
+.ng-invalid.ng-touched:not(form){
+    border: 1px solid red;
+}
+.invalid{
+    color: red;
+}
