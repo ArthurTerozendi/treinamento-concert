@@ -1,22 +1,19 @@
-
 namespace CsharpOO2
 {
-    class Carro : Veiculo
+    public class Moto : Veiculo 
     {
-        public Carro(string placa)
+        public Moto(string placa)
             : base(placa)
+        {
+        }
+        public Moto()
         {
             
         }
 
-        public Carro()
-        {
-
-        }
-        
         public override int QuantidadeDePneus()
         {
-            return 4;
+            return 2;
         }
     }
 }
