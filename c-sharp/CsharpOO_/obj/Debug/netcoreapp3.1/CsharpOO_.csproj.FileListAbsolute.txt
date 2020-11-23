@@ -1,0 +1,13 @@
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\CsharpOO_\bin\Debug\netcoreapp3.1\CsharpOO_.exe
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\CsharpOO_\bin\Debug\netcoreapp3.1\CsharpOO_.deps.json
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\CsharpOO_\bin\Debug\netcoreapp3.1\CsharpOO_.runtimeconfig.json
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\CsharpOO_\bin\Debug\netcoreapp3.1\CsharpOO_.runtimeconfig.dev.json
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\CsharpOO_\bin\Debug\netcoreapp3.1\CsharpOO_.dll
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\CsharpOO_\bin\Debug\netcoreapp3.1\CsharpOO_.pdb
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\CsharpOO_\obj\Debug\netcoreapp3.1\CsharpOO_.csprojAssemblyReference.cache
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\CsharpOO_\obj\Debug\netcoreapp3.1\CsharpOO_.AssemblyInfoInputs.cache
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\CsharpOO_\obj\Debug\netcoreapp3.1\CsharpOO_.AssemblyInfo.cs
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\CsharpOO_\obj\Debug\netcoreapp3.1\CsharpOO_.csproj.CoreCompileInputs.cache
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\CsharpOO_\obj\Debug\netcoreapp3.1\CsharpOO_.dll
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\CsharpOO_\obj\Debug\netcoreapp3.1\CsharpOO_.pdb
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\CsharpOO_\obj\Debug\netcoreapp3.1\CsharpOO_.genruntimeconfig.cache
