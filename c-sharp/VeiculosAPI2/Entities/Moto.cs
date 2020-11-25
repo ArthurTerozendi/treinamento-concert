@@ -11,6 +11,9 @@ namespace VeiculosAPI2.Entities
             
         }
 
+        public int numeroQuedas {get; set;}
+        public int CapotesDoGustavao {get; set;}
+
         public override int QuantidadeDePneus()
         {
             return 2;
