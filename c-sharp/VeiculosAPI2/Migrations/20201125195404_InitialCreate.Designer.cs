@@ -9,7 +9,7 @@ using VeiculosAPI2.Entities;
 namespace VeiculosAPI2.Migrations
 {
     [DbContext(typeof(VeiculosContext))]
-    [Migration("20201124222239_InitialCreate")]
+    [Migration("20201125195404_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -78,6 +78,9 @@ namespace VeiculosAPI2.Migrations
                         .HasColumnType("bigint")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn);
 
+                    b.Property<int>("CapotesDoGustavao")
+                        .HasColumnType("integer");
+
                     b.Property<string>("cor")
                         .HasColumnType("text");
 
@@ -86,6 +89,9 @@ namespace VeiculosAPI2.Migrations
 
                     b.Property<string>("modelo")
                         .HasColumnType("text");
+
+                    b.Property<int>("numeroQuedas")
+                        .HasColumnType("integer");
 
                     b.Property<string>("placa")
                         .HasColumnType("text");

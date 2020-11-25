@@ -49,7 +49,9 @@ namespace VeiculosAPI2.Migrations
                     cor = table.Column<string>(nullable: true),
                     marca = table.Column<string>(nullable: true),
                     modelo = table.Column<string>(nullable: true),
-                    placa = table.Column<string>(nullable: true)
+                    placa = table.Column<string>(nullable: true),
+                    numeroQuedas = table.Column<int>(nullable: false),
+                    CapotesDoGustavao = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

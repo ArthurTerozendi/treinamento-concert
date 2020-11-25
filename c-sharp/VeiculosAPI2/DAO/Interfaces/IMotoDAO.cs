@@ -6,12 +6,12 @@ using VeiculosAPI2.Entities;
 
 namespace VeiculosAPI2.DAO
 {
-    public interface IMatoDAO
+    public interface IMotoDAO
     {
         Moto GetMoto(long id);
         Moto AddMoto(Moto moto);
         Moto UpadateMoto(Moto moto, long id);
-        Moto AddAllMotos(List<Moto> motos);
+        List<Moto> AddAllMotos(List<Moto> motos);
         Moto DeleteMoto(long id);
     }
 }

@@ -14,16 +14,17 @@ namespace VeiculosAPI2.Controllers
     [Route("[controller]")]
     public class MotoController : ControllerBase
     {
+        MotoDAO motoDAO;
         public MotoController()
         {
-            MotoDAO motoDAO = new MotoDAO();
+           motoDAO = new MotoDAO();
         }
         [HttpGet("{id}")]
         public ActionResult<Moto> GetOne(long id)
         {
             try
             {   
-                var moto = motoDAO.GetMotos(id);
+                var moto = motoDAO.GetMoto(id);
                 return Ok(moto);
             }
             catch (Exception e)
@@ -32,12 +33,27 @@ namespace VeiculosAPI2.Controllers
             }
         }
 
-       /* [HttpPost("{id}")]
+       [HttpPost("{id}")]
         public ActionResult<Moto> Post()
         {
-
+            try
+            {
+                var moto = motoDAO.AddMoto(new Moto(){
+                    marca = "biz",
+                    modelo = "bizinha",
+                    cor = "preta",     
+                    placa = "abc123",
+                    numeroQuedas = 2,
+                    CapotesDoGustavao = 2
+                });
+                return Ok(moto);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
         }
-
+    /*
         [HttpPut("{id}")]
         public ActionResult<Moto> Put()
         {
@@ -48,6 +64,7 @@ namespace VeiculosAPI2.Controllers
         public ActionResult<Moto> Delete()
         {
 
-        }*/
+        }
+    */
     }
 }

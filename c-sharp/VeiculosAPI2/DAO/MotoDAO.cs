@@ -5,8 +5,12 @@ using System.Collections.Generic;
 
 namespace VeiculosAPI2.DAO
 {
-    public class MotoDAO : IMatoDAO
+    public class MotoDAO : IMotoDAO
     {
+        public MotoDAO()
+        {
+            
+        }
         public Moto GetMoto(long id)
         {
             try
@@ -53,7 +57,7 @@ namespace VeiculosAPI2.DAO
                     motoToUpadate.cor = moto.cor;
                     motoToUpadate.placa = moto.placa;
                     motoToUpadate.numeroQuedas = moto.numeroQuedas;
-                    //motoToUpadate.capotesDoGustavo = moto.capotesDoGustavo;
+                    motoToUpadate.CapotesDoGustavao = moto.CapotesDoGustavao;
                     
                     ctx.SaveChanges();
                     return motoToUpadate;
@@ -71,7 +75,7 @@ namespace VeiculosAPI2.DAO
             {
                 using(VeiculosContext ctx = new VeiculosContext())
                 {
-                    foreach (var moto in moto)
+                    foreach (var moto in motos)
                     {
                         var createdMoto = ctx.Moto.Add(moto);
                     }
