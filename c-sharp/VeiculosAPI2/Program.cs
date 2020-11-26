@@ -18,15 +18,10 @@ namespace VeiculosAPI2
         {
             MotoController motoController = new MotoController();
 
-            /*motoController.Post(new Moto(){
-                id = 4,
-                marca = "bizan",
-                modelo = "bizaninha",
-                cor = "branca",     
-                placa = "abc125",
-                numeroQuedas = 2,
-                CapotesDoGustavao = 2
-            });*/
+            motoController.Post(new Moto(){
+                id = 8,
+                placa = "abc128",
+            });
 
            /* motoController.Put(2, new Moto(){
                 marca = "abc",
@@ -37,7 +32,7 @@ namespace VeiculosAPI2
                 CapotesDoGustavao = 2
             });*/
 
-            
+
 
             Console.Write("teste");
             CreateHostBuilder(args).Build().Run();

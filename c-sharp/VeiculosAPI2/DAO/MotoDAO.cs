@@ -7,10 +7,12 @@ namespace VeiculosAPI2.DAO
 {
     public class MotoDAO : IMotoDAO
     {
+        private List<Moto> motos = new List<Moto>();
         public MotoDAO()
         {
             
         }
+        
         public Moto GetMoto(long id)
         {
             try
@@ -23,6 +25,23 @@ namespace VeiculosAPI2.DAO
             }
             catch (Exception ex)
             {
+                throw;
+            }
+        }
+
+        public List<Moto> GetAllMotos()
+        {
+            try
+            {
+                using(VeiculosContext ctx =  new VeiculosContext())
+                {
+                    var query =  ctx.Moto;
+                    return query.ToList<Moto>();
+                }
+            }
+            catch (System.Exception)
+            {
+                
                 throw;
             }
         }

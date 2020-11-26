@@ -13,5 +13,6 @@ namespace VeiculosAPI2.DAO
         Moto UpadateMoto(Moto moto, long id);
         List<Moto> AddAllMotos(List<Moto> motos);
         Moto DeleteMoto(long id);
+        List<Moto> GetAllMotos();
     }
 }

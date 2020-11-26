@@ -15,6 +15,8 @@ namespace VeiculosAPI2.Controllers
     public class MotoController : ControllerBase
     {
         MotoDAO motoDAO;
+        private List<Moto> motos = new List<Moto>();
+
         public MotoController()
         {
            motoDAO = new MotoDAO();
@@ -33,7 +35,20 @@ namespace VeiculosAPI2.Controllers
             }
         }
 
-       [HttpPost("{id}")]
+        [HttpGet]
+        public ActionResult<Moto> GetAllMotos()
+        {
+            try
+            {
+                motos = motoDAO.GetAllMotos();
+                return Ok(motos);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
+        }
+       [HttpPost]
         public ActionResult<Moto> Post(Moto moto)
         {
             try
