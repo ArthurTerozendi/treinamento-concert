@@ -110,8 +110,22 @@ namespace VeiculosAPI2.DAO
         }
 
         public Moto DeleteMoto(long id)
-        {
-            return null;
+        {   
+            try
+            {
+                using(VeiculosContext ctx = new VeiculosContext())
+                {
+                    var moto = ctx.Moto.Where(m => m.id == id).First();
+                    ctx.Moto.Remove(moto);
+                    ctx.SaveChanges();
+                    return moto;
+                }
+            }
+            catch (System.Exception)
+            {
+                
+                throw;
+            }
         }
 
     }

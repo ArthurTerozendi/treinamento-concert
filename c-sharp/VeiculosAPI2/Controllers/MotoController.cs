@@ -76,11 +76,18 @@ namespace VeiculosAPI2.Controllers
             }
         }
         
-        /*[HttpDelete("{id}")]
-        public ActionResult<Moto> Delete()
+        [HttpDelete("{id}")]
+        public ActionResult<Moto> Delete(long id)
         {
-
+            try
+            {
+                var mt = motoDAO.DeleteMoto(id);
+                return Ok(mt);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
         }
-    */
     }
 }

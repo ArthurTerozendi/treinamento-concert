@@ -1,7 +1,10 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Commons_Core.Entities;
+
 namespace VeiculosAPI2.Entities
 {
-    public abstract class Veiculo
+    public abstract class Veiculo : BaseEntity
     {
         public Veiculo (string placa)
         {
@@ -14,9 +17,17 @@ namespace VeiculosAPI2.Entities
         [Key]
         [Required]
         public long id {get; set;}
+
+        [Column(name:"COR")]
         public string cor {get; set;}
+        
+        [Column(name:"MARCA")]
         public string marca {get; set;}
+        
+        [Column(name:"MODELO")]
         public string modelo {get; set;}
+
+        [Column(name:"PLACA")]
         private string _placa;
 
         public string placa 
