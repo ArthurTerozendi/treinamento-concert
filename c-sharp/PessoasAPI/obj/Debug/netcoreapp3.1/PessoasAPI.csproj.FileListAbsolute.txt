@@ -65,3 +65,12 @@ C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\PessoasAPI
 C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\PessoasAPI\obj\Debug\netcoreapp3.1\PessoasAPI.dll
 C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\PessoasAPI\obj\Debug\netcoreapp3.1\PessoasAPI.pdb
 C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\PessoasAPI\obj\Debug\netcoreapp3.1\PessoasAPI.genruntimeconfig.cache
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\PessoasAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\PessoasAPI\bin\Debug\netcoreapp3.1\Microsoft.DotNet.InternalAbstractions.dll
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\PessoasAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\PessoasAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\PessoasAPI\bin\Debug\netcoreapp3.1\NSwag.Annotations.dll
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\PessoasAPI\bin\Debug\netcoreapp3.1\NSwag.AspNetCore.dll
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\PessoasAPI\bin\Debug\netcoreapp3.1\NSwag.Core.dll
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\PessoasAPI\bin\Debug\netcoreapp3.1\NSwag.Generation.dll
+C:\Users\Arthur\Documents\MeusProjetosGit\treinamento-concert\c-sharp\PessoasAPI\bin\Debug\netcoreapp3.1\NSwag.Generation.AspNetCore.dll

@@ -10,6 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using PessoasAPI.DAO;
+using PessoasAPI.Business;
+using PessoasAPI.Business.Interface;
 
 namespace PessoasAPI
 {
@@ -25,7 +28,10 @@ namespace PessoasAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSwaggerDocument();
             services.AddControllers();
+            services.AddSingleton<IPessoaDAO, PessoaDAO>();
+            services.AddSingleton<IPessoaBusiness, PessoaBusiness>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +52,9 @@ namespace PessoasAPI
             {
                 endpoints.MapControllers();
             });
+
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
         }
     }
 }
