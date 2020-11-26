@@ -34,33 +34,34 @@ namespace VeiculosAPI2.Controllers
         }
 
        [HttpPost("{id}")]
-        public ActionResult<Moto> Post()
+        public ActionResult<Moto> Post(Moto moto)
         {
             try
             {
-                var moto = motoDAO.AddMoto(new Moto(){
-                    marca = "biz",
-                    modelo = "bizinha",
-                    cor = "preta",     
-                    placa = "abc123",
-                    numeroQuedas = 2,
-                    CapotesDoGustavao = 2
-                });
-                return Ok(moto);
+                var mt = motoDAO.AddMoto(moto);
+                return Ok(mt);
             }
             catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
-    /*
+    
         [HttpPut("{id}")]
-        public ActionResult<Moto> Put()
+        public ActionResult<Moto> Put(long id, Moto moto)
         {
-
+            try
+            {
+                var mt = motoDAO.UpadateMoto(moto, id);
+                return Ok(mt);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
         }
         
-        [HttpDelete("{id}")]
+        /*[HttpDelete("{id}")]
         public ActionResult<Moto> Delete()
         {
 
