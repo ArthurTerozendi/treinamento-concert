@@ -14,10 +14,7 @@ namespace VeiculosAPI2.Entities
         {
 
         }
-        [Key]
-        [Required]
-        public long id {get; set;}
-
+        
         [Column(name:"COR")]
         public string cor {get; set;}
         

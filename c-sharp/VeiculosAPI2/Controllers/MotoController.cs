@@ -5,89 +5,23 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Commons_Core.API;
 using VeiculosAPI2.DAO;
 using VeiculosAPI2.Entities;
+using VeiculosAPI2.Business;
+using VeiculosAPI2.Business;
+using VeiculosAPI2.VO;
 
-namespace VeiculosAPI2.Controllers
+namespace VeiculosAPI2.Controller
 {
     [ApiController]
     [Route("[controller]")]
-    public class MotoController : ControllerBase
+    public class MotoController : BaseRoutes<IMotoBusiness, IMotoDAO, VeiculosContext, MotoVO, Moto, DefaultMapper>
     {
-        MotoDAO motoDAO;
-        private List<Moto> motos = new List<Moto>();
+        public MotoController(IMotoBusiness motoBusiness)
+            :base(motoBusiness)
+        {
 
-        public MotoController()
-        {
-           motoDAO = new MotoDAO();
-        }
-        [HttpGet("{id}")]
-        public ActionResult<Moto> GetOne(long id)
-        {
-            try
-            {   
-                var moto = motoDAO.GetMoto(id);
-                return Ok(moto);
-            }
-            catch (Exception e)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
-            }
-        }
-
-        [HttpGet]
-        public ActionResult<Moto> GetAllMotos()
-        {
-            try
-            {
-                motos = motoDAO.GetAllMotos();
-                return Ok(motos);
-            }
-            catch (Exception e)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
-            }
-        }
-       [HttpPost]
-        public ActionResult<Moto> Post(Moto moto)
-        {
-            try
-            {
-                var mt = motoDAO.AddMoto(moto);
-                return Ok(mt);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
-            }
-        }
-    
-        [HttpPut("{id}")]
-        public ActionResult<Moto> Put(long id, Moto moto)
-        {
-            try
-            {
-                var mt = motoDAO.UpadateMoto(moto, id);
-                return Ok(mt);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
-            }
-        }
-        
-        [HttpDelete("{id}")]
-        public ActionResult<Moto> Delete(long id)
-        {
-            try
-            {
-                var mt = motoDAO.DeleteMoto(id);
-                return Ok(mt);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
-            }
         }
     }
 }

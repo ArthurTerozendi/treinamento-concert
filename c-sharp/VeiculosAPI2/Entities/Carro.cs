@@ -1,4 +1,3 @@
-
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace VeiculosAPI2.Entities

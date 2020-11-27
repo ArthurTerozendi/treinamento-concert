@@ -13,6 +13,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Npgsql" Version="4.1.5" />
+    <PackageReference Include="NSwag.AspNetCore" Version="13.9.4" />
   </ItemGroup>
 
 </Project>

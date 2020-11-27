@@ -16,27 +16,7 @@ namespace VeiculosAPI2
     {
         public static void Main(string[] args)
         {
-            MotoController motoController = new MotoController();
-
-            motoController.Post(new Moto(){
-                id = 8,
-                placa = "abc128",
-            });
-
-           /* motoController.Put(2, new Moto(){
-                marca = "abc",
-                modelo = "2019",
-                cor = "branca",     
-                placa = "abc124",
-                numeroQuedas = 3,
-                CapotesDoGustavao = 2
-            });*/
-
-
-
-            Console.Write("teste");
-            CreateHostBuilder(args).Build().Run();
-            
+            CreateHostBuilder(args).Build().Run();   
         }
 
         public static IWebHostBuilder CreateHostBuilder(string[] args)

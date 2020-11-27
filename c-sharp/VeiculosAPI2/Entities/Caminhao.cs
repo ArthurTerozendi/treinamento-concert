@@ -1,5 +1,10 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
+
 namespace VeiculosAPI2.Entities
-{
+{   
+    
+    [Table("T_CAMINHAO")]
     public class Caminhao : Veiculo
     {
         public Caminhao (string placa)
@@ -15,7 +20,8 @@ namespace VeiculosAPI2.Entities
         {
             return numeroEixos * 2;
         }
-
+        
+        [Column(name:"NUMERO_EIXOS")]
         public int numeroEixos {get; set;}
     }
 }
